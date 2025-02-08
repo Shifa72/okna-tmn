@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content,
+p {
+  padding: 1rem 0;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.differences-section {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  align-items: stretch;
+}
+
+
+.differences-section .image-with-text {
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Элементы располагаются в одной строке */
+  margin-right: 0px; /* Небольшое расстояние между элементами */
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer; /* Указатель мыши меняет вид при наведении */
+}
+
+.differences-section .image-with-text img {
+  width: 150px; /* Изображение занимает всю ширину контейнера */
+  height: auto; /* Сохраняем пропорции изображения */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.differences-section .image-with-text span {
+  
+  display: block; /* Текст располагается под изображением */
+  text-align: center; /* Центрирование текста */
+}
+
+.differences-section .active {
+  border-bottom: 2px solid #007bff; /* Подчеркивание активного элемента */
+}
+
+.image-with-text.active {
+  transform: scale(1.05); /* Увеличение активного элемента */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-with-text:hover {
+  transform: scale(1.05); /* Немного увеличивает изображение при наведении */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-section {
+  position: center;
+  margin-top: 1rem;
+}
+
+.horizontal-container {
+  max-width: auto;
+  display: flex;
+  align-items: center;             /* Центрируем элементы вертикально */
+  gap: 10px;                       /* Добавляем промежуток между элементами */
+}
+
+
+
+.horizontal-container ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding-left: 0;       /* Убираем отступ слева от списка */
+  width: auto;          /* Распределяем элементы по ширине контейнера */
+
+}
+.horizontal-container ol {
+  padding-left: 0;       /* Убираем отступ слева от списка */
+  margin-left: 0;       /* Убираем отступ слева от списка */
+  
+}
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Подчеркивание активного элемента */
+  transform: scale(1.05); /* Увеличение активного элемента */
+  cursor: pointer;
+
+}
+.Item :not(.active):hover {
+  cursor: pointer; 
+  transform: scale(1.05); /* Увеличение активного элемента */
+}
+
+.info  {
+  max-width: auto;
+}
+
+.infoDescription {
+  margin-left: 0px;
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+
+}
+
+.priceStyle {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%; /* Распределяем элементы по ширине контейнера */
+  margin-top: 0px; /* Добавляем отступ */
+  align-items: center
+}
