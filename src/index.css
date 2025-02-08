@@ -8,9 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  
 }
-
 
 main {
   max-width: 850px;
@@ -40,7 +38,6 @@ p {
   padding: 1rem 0;
 }
 
-
 .centered {
   text-align: center;
 }
@@ -64,47 +61,45 @@ p {
   align-items: stretch;
 }
 
-
 .differences-section .image-with-text {
   position: relative;
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex; /* Элементы располагаются в одной строке */
-  margin-right: 0px; /* Небольшое расстояние между элементами */
+  display: flex;
+  margin-right: 0px;
   padding: 10px;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
   min-width: 200px;
   text-align: center;
-  cursor: pointer; /* Указатель мыши меняет вид при наведении */
+  cursor: pointer;
 }
 
 .differences-section .image-with-text img {
-  width: 150px; /* Изображение занимает всю ширину контейнера */
-  height: auto; /* Сохраняем пропорции изображения */
+  width: 150px;
+  height: auto;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
 .differences-section .image-with-text span {
-  
-  display: block; /* Текст располагается под изображением */
-  text-align: center; /* Центрирование текста */
+  display: block;
+  text-align: center;
 }
 
 .differences-section .active {
-  border-bottom: 2px solid #007bff; /* Подчеркивание активного элемента */
+  border-bottom: 2px solid #007bff;
 }
 
 .image-with-text.active {
-  transform: scale(1.05); /* Увеличение активного элемента */
+  transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .image-with-text:hover {
-  transform: scale(1.05); /* Немного увеличивает изображение при наведении */
+  transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,36 +111,34 @@ p {
 .horizontal-container {
   max-width: auto;
   display: flex;
-  align-items: center;             /* Центрируем элементы вертикально */
-  gap: 10px;                       /* Добавляем промежуток между элементами */
+  align-items: center;
+  gap: 10px;
 }
-
-
 
 .horizontal-container ul {
-  list-style-type: none; /* Убираем маркеры списка */
-  padding-left: 0;       /* Убираем отступ слева от списка */
-  width: auto;          /* Распределяем элементы по ширине контейнера */
+  list-style-type: none;
+  padding-left: 0;
+  width: auto;
+}
 
-}
 .horizontal-container ol {
-  padding-left: 0;       /* Убираем отступ слева от списка */
-  margin-left: 0;       /* Убираем отступ слева от списка */
-  
+  padding-left: 0;
+  margin-left: 0;
 }
+
 .active {
   font-weight: bold;
-  border-bottom: 2px solid #007bff; /* Подчеркивание активного элемента */
-  transform: scale(1.05); /* Увеличение активного элемента */
+  border-bottom: 2px solid #007bff;
+  transform: scale(1.05);
   cursor: pointer;
-
-}
-.Item :not(.active):hover {
-  cursor: pointer; 
-  transform: scale(1.05); /* Увеличение активного элемента */
 }
 
-.info  {
+.Item:not(.active):hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.info {
   max-width: auto;
 }
 
@@ -153,7 +146,6 @@ p {
   margin-left: 0px;
   font-size: 14px;
   color: rgb(50, 50, 50);
-
 }
 
 .priceStyle {
@@ -165,7 +157,45 @@ p {
 }
 
 .banner {
-  width: 100%; /* Распределяем элементы по ширине контейнера */
-  margin-top: 0px; /* Добавляем отступ */
-  align-items: center
+  width: 100%;
+  margin-top: 0px;
+  align-items: center;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  section ul li {
+    padding: 0.75rem;
+  }
+
+  .differences-section {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .differences-section .image-with-text {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .horizontal-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info {
+    margin-top: 10px;
+  }
+
+  .banner {
+    margin-top: 10px;
+  }
 }
