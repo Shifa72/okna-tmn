@@ -11,14 +11,14 @@ import Footer from "./components/Footer/Footer"
 
 
 export default function App() {
-  const [visible, setVisible] = useState(true)
+  const [isHeaderVisible, setVisible] = useState(true)
   const [tab, setTab] = useState('main')
 
   // setTimeout(() => {setVisible(false)}, 3000)
 
   return (
     <>
-      {visible && <Header />}
+      {isHeaderVisible && <Header />}
       <main>
         <TabsSection active={tab} onChange={(current) => setTab(current)} />
 
@@ -39,7 +39,7 @@ export default function App() {
 
 
       </main>
-      {visible && <Footer />}
+      {isHeaderVisible && <Footer />}
 
     </>
   )
