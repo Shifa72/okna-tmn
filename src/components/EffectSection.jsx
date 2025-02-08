@@ -79,7 +79,7 @@ export default function EffectSection() {
             <>
 
             <ImageWithText
-                src={'/mosquitonets.jpeg'}
+                src={'/okna-tmn/mosquitonets.jpeg'}
                 text="Москитные сетки"
                 onClick={handleOpenModal("mosquitonet")}
                 
@@ -139,7 +139,7 @@ export default function EffectSection() {
             </Modal>
 
             <ImageWithText
-            src={'/remontokon.jpeg'}
+            src={'/okna-tmn/remontokon.jpeg'}
             text="Ремонт окон, замена фурнитуры"
             onClick={handleOpenModal("remontokon")}
             >Открыть информацию
@@ -191,7 +191,7 @@ export default function EffectSection() {
             </Modal>
 
             <ImageWithText
-            src={'/otkosi.jpeg'}
+            src={'/okna-tmn/otkosi.jpeg'}
             text="Откосы и подоконники"
             onClick = {handleOpenModal("otkosy")}
             >
@@ -246,7 +246,7 @@ export default function EffectSection() {
 
 
             <ImageWithText
-            src={'/replacesteklo.jpeg'}
+            src={'/okna-tmn/replacesteklo.jpeg'}
             text="Замена стеклопакетов"
             onClick = {handleOpenModal("replacesteklo")}
             >Открыть информацию

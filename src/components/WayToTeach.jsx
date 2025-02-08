@@ -27,7 +27,7 @@ export default function WayToTeach () {
             </td>
 
             <td style={{ verticalAlign: "middle" }}>
-              <img src="/rastr.png" alt="" 
+              <img src="/okna-tmn/rastr.png" alt="" 
               style={{
                 maxWidth: "180px",
               }}
