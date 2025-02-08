@@ -12,6 +12,7 @@ import {replacestekloItems} from "../dataSection";
 
 
 
+
 export default function EffectSection() {
    
     const [selectedMosquitonetItem, setSelectedMosquitonetItem] = useState(null);
@@ -78,7 +79,7 @@ export default function EffectSection() {
             <>
 
             <ImageWithText
-                src="/mosquitonets.jpeg"
+                src={'/mosquitonets.jpeg'}
                 text="Москитные сетки"
                 onClick={handleOpenModal("mosquitonet")}
                 
@@ -138,7 +139,7 @@ export default function EffectSection() {
             </Modal>
 
             <ImageWithText
-            src="/remontokon.jpeg"
+            src={'/remontokon.jpeg'}
             text="Ремонт окон, замена фурнитуры"
             onClick={handleOpenModal("remontokon")}
             >Открыть информацию
@@ -190,7 +191,7 @@ export default function EffectSection() {
             </Modal>
 
             <ImageWithText
-            src="/otkosi.jpeg"
+            src={'/otkosi.jpeg'}
             text="Откосы и подоконники"
             onClick = {handleOpenModal("otkosy")}
             >
@@ -245,7 +246,7 @@ export default function EffectSection() {
 
 
             <ImageWithText
-            src="/replacesteklo.jpeg"
+            src={'/replacesteklo.jpeg'}
             text="Замена стеклопакетов"
             onClick = {handleOpenModal("replacesteklo")}
             >Открыть информацию
