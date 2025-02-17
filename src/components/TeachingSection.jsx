@@ -11,7 +11,7 @@ export default function TeachingSection() {
             
         }}>
             
-            <h3> Почему выбирают нас?</h3>
+            <h3> <b> Что мы предлагаем? </b></h3>
             
             <ul>
                 

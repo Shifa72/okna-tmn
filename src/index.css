@@ -162,8 +162,53 @@ p {
   align-items: center;
 }
 
+.tabSection{
+  padding: 0px 0px 0px 15px; /* Уменьшаем отступы */
+  font-size: 14px;   /* Уменьшаем шрифт */
+  margin-bottom: 1rem;
+  top: 0rem;
+  display: flex; 
+  justify-content: center;
+  
+  
+}
+
+.callButton {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+.call-button:hover {
+  background-color: #0066d2;
+  transform: scale(1.05);
+}
+.call-button:active {
+  transform: scale(0.95);
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+
 /* Медиазапросы для мобильных устройств */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   main {
     padding: 0.5rem;
   }
@@ -176,26 +221,114 @@ p {
     padding: 0.75rem;
   }
 
+
   .differences-section {
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+    gap: 2px;
+    
+    
   }
 
   .differences-section .image-with-text {
     flex-basis: 100%;
     margin-bottom: 10px;
+    font-size: 14px;
+    
+  }
+
+  .differences-section .image-with-text img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+  }
+
+  .header{
+    flex-basis: 100%;
   }
 
   .horizontal-container {
-    flex-direction: column;
+   
     gap: 10px;
+    
   }
 
   .info {
     margin-top: 10px;
   }
 
-  .banner {
-    margin-top: 10px;
+  .tabSection{
+    padding: 0px 0px 0px 0px; /* Уменьшаем отступы */
+    font-size: 14px;   /* Уменьшаем шрифт */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
   }
+  .tabSection button {
+    padding: 12px 12px !important;
+    margin: 1px 2px;
+    font-size: 14px !important;
+    flex-grow: 1;
+
+  }
+
+  .callButton {
+  margin: 0px;
+  padding-left: 0px;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 5px 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+.call-button:hover {
+  background-color: #0066d2;
+  transform: scale(1.05);
+}
+.call-button:active {
+  transform: scale(0.95);
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .working-hours {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-right: auto;
+    padding-right: 1rem;
+  }
+
+  .header {
+    height: 10px;
+  }
+  .horizontal-container{
+    display: block;
+  }
+
+  
+  
 }

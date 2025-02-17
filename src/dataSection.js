@@ -48,7 +48,7 @@ export const mosquitonetItems = [
 export const remontokonItems = [
     {
         title: "Ремонт и замена фурнитуры",
-        imageUrl: "/okna-tmn/fur-pol-zam.jpg", // Путь к изображению
+        imageUrl: "/okna-tmn/fur-pol-zam.JPG", // Путь к изображению
         descriptions: 
             ["Угловой переключатель",
             "Поворотно-откидной механизм (ножницы)",

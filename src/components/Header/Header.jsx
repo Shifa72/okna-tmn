@@ -1,41 +1,38 @@
-import { useEffect, useState } from 'react'
-import logo from '/logo.png'
-import { styled } from 'styled-components'
+import { useEffect, useState } from "react";
+import logo from "/logo.png";
+import { styled } from "styled-components";
 //import './Header.css'
 
 const HeaderContainer = styled.header`
-  height: 200px;
+  height: 170px;
   display: flex;
-  padding: 0 2rem;
+  padding: 0.5rem;
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 1px solid #ccc;
   background: #fafafa;
-`
-
-
+`;
 
 export default function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer className="HeaderContainer">
+      <img src={logo} width="76px" alt={"logo"} className="logo" />
 
-      <img src={logo} width = "100" alt={"logo"} />
-
-      <h6>
-        Ремонт, обслуживание и 
-        <br />аксессуары для пластиковых окон
+      <h6 className="nameCompany">
+        Ремонт, обслуживание и
+        <br />
+        аксессуары для пластиковых окон
       </h6>
 
-      <h6>
+      <h6 className="working-hours">
         <b>Режим работы: с 9:00 до 21:00</b>
-        <br />Работаем по Тюмени и пригороду
+        <br />
+        Работаем по Тюмени и пригороду
       </h6>
 
-      <h4>
-        <b >+7(982)787-04-39</b>
-      </h4>
-      </HeaderContainer>
-  )
-
+      <a href="tel:+79827870439" className="callButton">
+        <span class="phone-icon">+7(982)787-04-39</span>
+      </a>
+    </HeaderContainer>
+  );
 }
-

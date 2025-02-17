@@ -2,13 +2,7 @@ import Button from './Button/Button'
 
 export default function TabsSection({ active, onChange }) {
     return (
-        <section style={{
-            marginBottom: '1rem',
-            marginTop: '0rem',
-            display: 'flex', // Включаем flexbox для равномерного распределения кнопок
-            justifyContent: 'space-between', // Распределяем кнопки равномерно по ширине
-            
-        }}>
+        <section className='tabSection'>
             <Button
                 isActive={active === 'main'}
                 onClick={() => onChange('main')}
