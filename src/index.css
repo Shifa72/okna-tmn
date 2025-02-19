@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content,
+p {
+  padding: 1rem 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.differences-section {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  align-items: stretch;
+}
+
+.differences-section .image-with-text {
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 0px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.differences-section .image-with-text img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.differences-section .image-with-text span {
+  display: block;
+  text-align: center;
+}
+
+.differences-section .active {
+  border-bottom: 2px solid #007bff;
+}
+
+.image-with-text.active {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-with-text:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-section {
+  position: center;
+  margin-top: 1rem;
+}
+
+.horizontal-container {
+  max-width: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.horizontal-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: auto;
+}
+
+.horizontal-container ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.Item:not(.active):hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.info {
+  max-width: auto;
+}
+
+.infoDescription {
+  margin-left: 0px;
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}
+
+.priceStyle {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 0px;
+  align-items: center;
+}
+
+.tabSection{
+  padding: 0px 0px 0px 15px; /* Уменьшаем отступы */
+  font-size: 14px;   /* Уменьшаем шрифт */
+  margin-bottom: 1rem;
+  top: 0rem;
+  display: flex; 
+  justify-content: center;
+  
+  
+}
+
+.callButton {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+.call-button:hover {
+  background-color: #0066d2;
+  transform: scale(1.05);
+}
+.call-button:active {
+  transform: scale(0.95);
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  section ul li {
+    padding: 0.75rem;
+  }
+
+
+  .differences-section {
+    flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+    gap: 2px;
+    
+    
+  }
+
+  .differences-section .image-with-text {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    
+  }
+
+  .differences-section .image-with-text img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+  }
+
+  .header{
+    flex-basis: 100%;
+  }
+
+  .horizontal-container {
+   
+    gap: 10px;
+    
+  }
+
+  .info {
+    margin-top: 10px;
+  }
+
+  .tabSection{
+    padding: 0px 0px 0px 0px; /* Уменьшаем отступы */
+    font-size: 14px;   /* Уменьшаем шрифт */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  .tabSection button {
+    padding: 12px 12px !important;
+    margin: 1px 2px;
+    font-size: 14px !important;
+    flex-grow: 1;
+
+  }
+
+  .callButton {
+  margin: 0px;
+  padding-left: 0px;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 5px 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+.call-button:hover {
+  background-color: #0066d2;
+  transform: scale(1.05);
+}
+.call-button:active {
+  transform: scale(0.95);
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .working-hours {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-right: auto;
+    padding-right: 1rem;
+  }
+
+  .header {
+    height: 10px;
+  }
+  .horizontal-container{
+    display: block;
+  }
+
+  
+  
+}
