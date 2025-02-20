@@ -5,20 +5,21 @@ import './Modal.css'
 export default function Modal({ children, open }) {
 
     const dialog = useRef()
+    
 
     useEffect(() => {
-        if (open) {
-            dialog.current.showModal()
-        } else {
-           dialog.current.close()  
+        if (open && !dialog.current.open) {
+            dialog.current.showModal();
+        } else if (!open && dialog.current.open) {
+            dialog.current.close();
         }
-    }, [open])
+    }, [open]);
 
 
     
 
     return createPortal(
-        <dialog ref={dialog}>{ children }</dialog>,
+        <dialog key="modal-dialog" ref={dialog}>{ children }</dialog>,
         document.getElementById('modal')
     )
 }

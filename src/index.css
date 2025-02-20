@@ -26,12 +26,7 @@ section ul {
   list-style: none;
 }
 
-section ul li {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
+
 
 .content,
 p {
@@ -97,6 +92,9 @@ p {
 .teaching-section {
   position: center;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+
 }
 
 .horizontal-container {
@@ -193,6 +191,50 @@ p {
   vertical-align: middle;
   margin-right: 0px;
 }
+
+/* --------Наши Услуги--------- */
+
+.ourServices {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Отступ между элементами */
+  padding: 10px;
+  box-sizing: content-box;
+  background-color: #f9f9f9; /* Цвет фона, можно поменять */
+  border-radius: 10px; /* Закругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.ourServices ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.ourServices li::before {
+  content: '\2713\0020'; /* Галочка перед каждым пунктом списка */
+  color: #007BFF; /* Цвет галочки, можно поменять */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.ourServices img {
+  max-width: 130px; /* Максимальная ширина изображения */
+  height: auto;
+  object-fit: contain; /* Изображение сохранит пропорции */
+  border-radius: 5px; /* Скруглим углы изображения */
+}
+
+
 
 
 /* Медиазапросы для мобильных устройств */
@@ -293,6 +335,11 @@ p {
   transform: scale(0.95);
 }
 
+.centered {
+  text-align: center;
+  padding-top: 6px;
+}
+
 .phone-icon {
   display: inline-block;
   width: 120px;
@@ -302,6 +349,27 @@ p {
   vertical-align: middle;
   margin-right: 0px;
 }
+
+/* --------Наши Услуги @media --------- */
+
+.ourServices {
+  width: auto;
+  flex-direction: row;
+  padding-left: 0,5%;
+}
+
+.ourServices ul {
+  text-align: left;
+  white-space: wrap;
+  line-height: 1em;
+  font-size: 14px;
+  margin-left: 1em;
+}
+
+.ourServices img {
+  margin: 0;
+}
+/* ------------------------------------ */
 
 }
 
