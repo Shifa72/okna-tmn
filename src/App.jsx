@@ -1,15 +1,18 @@
+import React from "react";
 import Header from "./components/Header/Header";
-import TeachingSection from "./components/TeachingSection";
-import IntroSection from "./components/introSection";
 import TabsSection from "./components/TabsSection";
 import FeedbackSection from "./components/FeedbackSection";
-import { useState } from "react";
+import IntroSection from "./components/introSection";
 import EffectSection from "./components/EffectSection";
 import AdvertSection from "./components/AdvertSection";
+import TeachingSection from "./components/TeachingSection";
 import OurWorksSection from "./components/OurWorksSection";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
-export default function App() {
+
+
+export default function mainPage() {
   const [isHeaderVisible, setVisible] = useState(true);
   const [tab, setTab] = useState("main");
 
@@ -38,3 +41,4 @@ export default function App() {
     </>
   );
 }
+

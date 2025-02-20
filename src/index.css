@@ -51,28 +51,19 @@ p {
 }
 
 .differences-section {
-  max-width: 850px;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 0px;
-  align-items: stretch;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
+
 .differences-section .image-with-text {
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-right: 0px;
+  width: 25%; /* Элементы занимают половину ширины */
+  box-sizing: border-box;
   padding: 10px;
   transition: all 0.3s ease-in-out;
-  box-sizing: border-box;
-  min-width: 200px;
   text-align: center;
   cursor: pointer;
 }
@@ -133,10 +124,7 @@ p {
   cursor: pointer;
 }
 
-.Item:not(.active):hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
+
 
 .info {
   max-width: auto;
@@ -208,13 +196,13 @@ p {
 
 
 /* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
+@media (max-width: 678px) {
   main {
     padding: 0.5rem;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   section ul li {
@@ -223,23 +211,29 @@ p {
 
 
   .differences-section {
-    flex-wrap: nowrap;
-    display: flex;
-    overflow-x: auto;
-    gap: 2px;
-    
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-direction: row; /* Важно, чтобы направление оставалось горизонтальным */
+    align-items: stretch; /* Гарантируем, что элементы заполняют высоту */
     
   }
 
   .differences-section .image-with-text {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-    font-size: 14px;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    margin-right: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
     
   }
 
   .differences-section .image-with-text img {
-    width: 80px;
+    width: 60px;
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
@@ -253,7 +247,7 @@ p {
   .horizontal-container {
    
     gap: 10px;
-    
+    display: block;
   }
 
   .info {
@@ -262,7 +256,7 @@ p {
 
   .tabSection{
     padding: 0px 0px 0px 0px; /* Уменьшаем отступы */
-    font-size: 14px;   /* Уменьшаем шрифт */
+    font-size: 15px;   /* Уменьшаем шрифт */
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
@@ -271,7 +265,7 @@ p {
   .tabSection button {
     padding: 12px 12px !important;
     margin: 1px 2px;
-    font-size: 14px !important;
+    font-size: 15px !important;
     flex-grow: 1;
 
   }
@@ -325,10 +319,5 @@ p {
   .header {
     height: 10px;
   }
-  .horizontal-container{
-    display: block;
-  }
 
-  
-  
 }

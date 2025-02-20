@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "/logo.png";
 import { styled } from "styled-components";
-//import './Header.css'
+
 
 const HeaderContainer = styled.header`
   height: 170px;
@@ -31,7 +31,7 @@ export default function Header() {
       </h6>
 
       <a href="tel:+79827870439" className="callButton">
-        <span class="phone-icon">+7(982)787-04-39</span>
+        <span className="phone-icon"> +7(982)787-04-39</span>
       </a>
     </HeaderContainer>
   );
